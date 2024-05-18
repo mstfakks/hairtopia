@@ -1,28 +1,21 @@
-import HairLengthSelect from "./components/page-component/hair-length-select";
-import HairNeedSelect from "./components/page-component/hair-need-select";
-import HairProblemSelect from "./components/page-component/hair-problem-select";
-import HairProcessSelect from "./components/page-component/hair-process-select";
-import HairStructureSelect from "./components/page-component/hair-structure-select";
-import Hero from "./components/page-component/hero";
-import UserForm from "./components/page-component/user-form";
-import HairTypeSelect from "./components/page-component/hair-type-select";
 import { useHairContext } from "./context/hair-provider";
+import ResultComponent from "./components/page-component/result-component";
+import FormStep from "./components/page-component/form-step";
+import Loading from "./components/page-component/loading";
 
 function App() {
-  //@ts-ignore
-  const { activeStep } = useHairContext()
+  const { loading, result } = useHairContext()
 
   return (
     <div className="container mx-auto h-screen p-4 ">
+      <Loading loading={loading} />
       <div className="flex justify-center flex-col items-center w-full h-full gap-3">
-        {activeStep === 0 && <Hero />}  
-        {activeStep === 1 && <UserForm />}  
-        {activeStep === 2 && <HairTypeSelect />}  
-        {activeStep === 3 && <HairLengthSelect />}  
-        {activeStep === 4 && <HairStructureSelect />}  
-        {activeStep === 5 && <HairProcessSelect />}  
-        {activeStep === 6 && <HairProblemSelect />}  
-        {activeStep === 7 && <HairNeedSelect />}  
+        
+        {
+          result ?
+            <ResultComponent /> : 
+            <FormStep />          
+        }  
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import { useHairContext } from "../../context/hair-provider";
 
 const Hero = () => {
-    //@ts-ignore
-    const { handleNext } = useHairContext()
+  //@ts-ignore
+  const { handleNext } = useHairContext();
   return (
     <>
       <h1 className="text-white text-5xl">HAIRTOPIA.2' YE HOŞ GELDİNİZ!</h1>
@@ -27,21 +27,21 @@ const Hero = () => {
           hover:border-2
           hover:transition-colors
           hover:bg-transparent
-          text-lg
+          text-2xl
         `}
       >
         Başlatmak İçin Dokunun
       </button>
-      <p className="text-white text-base">
+      <p className="text-white text-lg">
         Soruları yanıtlayarak farklı saç tipleri ve ihtiyaçlarına uygun Serie
         Expert ürünlerini keşfedin
       </p>
 
-      <div className="flex w-[590px] h-[826px]">
+      <div className="flex h-[82%]">
         <img
           src="/assets/images/hero.png"
           alt="kv"
-          className="object-contain"
+          className="object-contain w-full h-full"
         />
       </div>
     </>

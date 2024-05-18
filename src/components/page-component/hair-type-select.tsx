@@ -1,24 +1,40 @@
 import { useHairContext } from "../../context/hair-provider";
 import BaseButton from "../ui/base-button";
-import BaseSelect from "../ui/base-select";
+import BaseSelect, { Item } from "../ui/base-select";
 
-const hairTypes = [
-  { label: "Kuru", value: "dry" },
-  { label: "Yağlı", value: "oil" },
-  { label: "Normal", value: "normal" },
-];
+
 
 const HairTypeSelect = () => {
-  //@ts-ignore
-  const { handleNext, handleBack } = useHairContext();
+  const { handleNext, handleBack, formik } = useHairContext();
+
+  const hairTypes: Item[] = [
+    { 
+      label: "Kuru", 
+      value: "dry",
+      name: "hairType",
+    },
+    { 
+      label: "Yağlı", 
+      value: "oil" ,
+      name: "hairType",
+    },
+    { 
+      label: "Normal", 
+      value: "normal",
+      name: "hairType",
+    },
+  ];
+  
   return (
     <>
-      <BaseSelect explainText="Saç tipi seçiniz" items={hairTypes} />
+      {/*@ts-ignore*/}
+      <BaseSelect explainText="Saç tipi seçiniz" items={hairTypes} formik={formik} />
       <div className="flex flex-col gap-5 mt-5">
         <BaseButton
           buttonText="Devam Et"
           additionalClassName="text-3xl"
           onClick={handleNext}
+          disabled={formik?.values.hairType === ''}
         />
         <BaseButton
           buttonText="Geri"
