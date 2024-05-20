@@ -40,7 +40,7 @@ const Hero = () => {
       <div className="flex h-[82%]">
         <img
           loading="lazy"
-          src="/assets/images/hero.png"
+          src="./assets/images/hero.png"
           alt="kv"
           className="object-contain w-full h-full"
         />

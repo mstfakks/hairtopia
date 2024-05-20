@@ -67,47 +67,47 @@ const results: ResultProps[] = [
     {
         title: 'Metal Detox', 
         key: 'protectHairColor', 
-        imgUrl: '/assets/images/metal-detox.png'
+        imgUrl: './assets/images/metal-detox.png'
     },
     {
         title: 'Absolut Repair', 
         key: 'preventDry',
-        imgUrl: '/assets/images/absolut-repair.png'
+        imgUrl: './assets/images/absolut-repair.png'
     },
     {
         title: 'Absolut Repair Molecular', 
         key: 'inbugFixed',
-        imgUrl: '/assets/images/absolut-repair-molecular.png'
+        imgUrl: './assets/images/absolut-repair-molecular.png'
     },
     {
         title: 'Vitamino Color', 
         key: 'protectColor',
-        imgUrl: '/assets/images/vitamino-color.png'
+        imgUrl: './assets/images/vitamino-color.png'
     },
     {
         title: 'Pro Longer', 
         key: 'longHairHealthy',
-        imgUrl: '/assets/images/pro-longer.png'
+        imgUrl: './assets/images/pro-longer.png'
     },
     {
         title: 'Aminexil Advanced', 
         key: 'preventHairSkinProblem',
-        imgUrl: '/assets/images/aminexil-advanced.png'
+        imgUrl: './assets/images/aminexil-advanced.png'
     },
     {
         title: 'Silver', 
         key: 'yellowNeutral',
-        imgUrl: '/assets/images/silver.png'
+        imgUrl: './assets/images/silver.png'
     },
     {
         title: 'Curl Expression', 
         key: 'determineWave',
-        imgUrl: '/assets/images/curl-expression.png'
+        imgUrl: './assets/images/curl-expression.png'
     },
     {
         title: 'Liss Unlimited', 
         key: 'angryHair',
-        imgUrl: '/assets/images/liss-unlimited.png'
+        imgUrl: './assets/images/liss-unlimited.png'
     }
 ]
 
