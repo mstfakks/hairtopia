@@ -30,7 +30,7 @@ const BaseSelect = ({ explainText, items, formik }: BaseSelectProps) => {
             className={`
               border 
               border-white 
-              w-2/4 
+              w-full 
               text-center 
               rounded-xl 
               py-3 

@@ -25,7 +25,7 @@ const BaseInput = ({placeholder, name, onChange, onBlur, value}: BaseInputProps)
                 border-2 
                 bg-transparent 
                 text-white 
-                w-1/2
+                w-full
                 text-4xl
                 placeholder:text-white
           `}

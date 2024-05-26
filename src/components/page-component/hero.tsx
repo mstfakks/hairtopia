@@ -6,9 +6,8 @@ const Hero = () => {
   return (
     <>
       <h1 className="text-white text-5xl">HAIRTOPIA.2' YE HOŞ GELDİNİZ!</h1>
-      <p className="text-white text-lg italic">
-        Serie Expert ürünleri ile tüm saç bakımı ihtiyaçlarına özel profesyonel
-        çözümler sunuyoruz
+      <p className="text-white text-lg">
+        SAÇ İHTİYACINA GÖRE PROFESYONEL BAKIM RUTİNİ OLUŞTURUN
       </p>
       <button
         onClick={() => handleNext()}
@@ -30,11 +29,10 @@ const Hero = () => {
           text-2xl
         `}
       >
-        Başlatmak İçin Dokunun
+        TEŞHİSE BAŞLAMAK İÇİN DOKUNUN
       </button>
       <p className="text-white text-lg">
-        Soruları yanıtlayarak farklı saç tipleri ve ihtiyaçlarına uygun Serie
-        Expert ürünlerini keşfedin
+        SORULARI YANITLAYARAK FARKLI SAÇ TİPLERİ VE İHTİYAÇLARINA UYGUN SERİE EXPERT ÜRÜNLERİNİ KEŞFEDİN
       </p>
 
       <div className="flex h-[82%]">

@@ -5,7 +5,7 @@ const ResultComponent = () => {
     const { result, handleReset } = useHairContext()
     return(
         <>
-            <h1 className="text-8xl text-white ">Önerilen Ürün: {result?.title}</h1>
+            <h1 className="text-8xl text-white ">ÖNERİLEN ÜRÜN: {result?.title}</h1>
             <div className="flex h-[60%] mt-4">
                 <img
                     src={result?.imgUrl}
@@ -14,9 +14,9 @@ const ResultComponent = () => {
                 />
             </div>
             <BaseButton
-                buttonText="Başa Dön"
+                buttonText="BAŞA DÖN"
                 onClick={handleReset}
-                additionalClassName="text-3xl mt-4"                             
+                additionalClassName="text-3xl mt-4 w-1/2"                         
             />
 
         </>

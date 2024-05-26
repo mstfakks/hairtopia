@@ -3,8 +3,8 @@ import BaseButton from "../ui/base-button";
 import BaseSelect, { Item } from "../ui/base-select";
 
 const hairSkinProblem: Item[] = [
-  { label: "Var", value: "yes", name: 'hairProblem' },
-  { label: "Yok", value: "no", name: 'hairProblem' },
+  { label: "VAR", value: "yes", name: 'hairProblem' },
+  { label: "YOK", value: "no", name: 'hairProblem' },
 ];
 
 const HairProblemSelect = () => {
@@ -12,16 +12,16 @@ const HairProblemSelect = () => {
   return (
     <>
       {/*@ts-ignore*/}
-      <BaseSelect explainText="Saç derinizle ilgili sorununuz var mı?" items={hairSkinProblem} formik={formik} />
-      <div className="flex flex-col gap-5 mt-5">
+      <BaseSelect explainText="SAÇ DERİNİZLE İLGİLİ SORUNUNUZ VAR MI ?" items={hairSkinProblem} formik={formik} />
+      <div className="flex flex-col gap-5 mt-5 w-1/2">
         <BaseButton
-          buttonText="Devam Et"
+          buttonText="DEVAM ET"
           additionalClassName="text-3xl"
           onClick={handleNext}
           disabled={formik?.values.hairProblem === null}
         />
         <BaseButton
-          buttonText="Geri"
+          buttonText="GERİ"
           additionalClassName="text-3xl"
           onClick={handleBack}
         />

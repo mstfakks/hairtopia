@@ -9,17 +9,17 @@ const HairTypeSelect = () => {
 
   const hairTypes: Item[] = [
     { 
-      label: "Kuru", 
+      label: "KURU", 
       value: "dry",
       name: "hairType",
     },
     { 
-      label: "Yağlı", 
+      label: "YAĞLI", 
       value: "oil" ,
       name: "hairType",
     },
     { 
-      label: "Normal", 
+      label: "NORMAL", 
       value: "normal",
       name: "hairType",
     },
@@ -28,16 +28,16 @@ const HairTypeSelect = () => {
   return (
     <>
       {/*@ts-ignore*/}
-      <BaseSelect explainText="Saç tipi seçiniz" items={hairTypes} formik={formik} />
-      <div className="flex flex-col gap-5 mt-5">
+      <BaseSelect explainText="SAÇ TİPİ SEÇİNİZ" items={hairTypes} formik={formik} />
+      <div className="flex flex-col gap-5 mt-5 w-1/2">
         <BaseButton
-          buttonText="Devam Et"
+          buttonText="DEVAM ET"
           additionalClassName="text-3xl"
           onClick={handleNext}
           disabled={formik?.values.hairType === ''}
         />
         <BaseButton
-          buttonText="Geri"
+          buttonText="GERİ"
           additionalClassName="text-3xl"
           onClick={handleBack}
         />

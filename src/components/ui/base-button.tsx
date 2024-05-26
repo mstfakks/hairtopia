@@ -19,7 +19,7 @@ const BaseButton = ({ buttonText, additionalClassName, onClick, disabled }: Base
                 animate-pulse
                 rounded-xl
                 border-white
-                border
+                border                
                 disabled:shadow-none
                 disabled:animate-none
                 disabled:opacity-50
