@@ -4,22 +4,22 @@ import BaseSelect, { Item } from "../ui/base-select";
 
 const hairWants: Item[] = [
   {
-    label: "Uzun süre kalıcı renk koruması ve kırılmayı önleme",
+    label: "UZUN SÜRE KALICI RENK KORUMASI VE KIRILMAYI ÖNLEME",
     value: "protectHairColor",
     name: "hairNeed"
   },
-  { label: "Kuruluğu giderme ve yeniden yapılandırma", value: "preventDry", name: "hairNeed" },
-  { label: "Moleküler düzeyde içten onarım", value: "inbugFixed", name: "hairNeed" },
-  { label: "Renk koruması", value: "protectColor", name: "hairNeed" },
-  { label: "Uzun saçlar için canlılık kazandırma", value: "longHairHealthy", name: "hairNeed" },
-  { label: "Saç derisi sorunlarını giderme", value: "preventHairSkinProblem", name: "hairNeed" },
+  { label: "KURULUĞU GİDERME VE YENİDEN YAPILANDIRMA", value: "preventDry", name: "hairNeed" },
+  { label: "MOLEKÜLER DÜZEYDE İÇTEN ONARIM", value: "inbugFixed", name: "hairNeed" },
+  { label: "RENK KORUMASI", value: "protectColor", name: "hairNeed" },
+  { label: "UZUN SAÇLAR İÇİN CANLILIK KAZANDIRMA", value: "longHairHealthy", name: "hairNeed" },
+  { label: "SAÇ DERİSİ SORUNLARINI GİDERME", value: "preventHairSkinProblem", name: "hairNeed" },
   {
-    label: "İstenmeyen sarı alt tonları nötralize etme",
+    label: "İSTENMEYEN SARI ALT TONLARI NÖTRALİZE ETME",
     value: "yellowNeutral",
     name: "hairNeed"
   },
-  { label: "Dalga ve bukleleri belirginleştirme", value: "determineWave", name: "hairNeed" },
-  { label: "Kabaran asi saçları yatıştırma", value: "angryHair", name: "hairNeed" },
+  { label: "DALGA VE BUKLELERİ BELİRGİNLEŞTİRME", value: "determineWave", name: "hairNeed" },
+  { label: "KABARAN ASİ SAÇLARI YATIŞTIRMA", value: "angryHair", name: "hairNeed" },
 ];
 
 const HairNeedSelect = () => {
@@ -27,20 +27,20 @@ const HairNeedSelect = () => {
   return (
     <>
       <BaseSelect
-        explainText="Saçlarınızla ilgili en büyük ihtiyacınız nedir?"
+        explainText="SAÇLARINIZLA İLGİLİ EN BÜYÜK İHTİYACINIZ NEDİR ?"
         items={hairWants}
         //@ts-ignore
         formik={formik}
       />
-      <div className="flex flex-col gap-5 mt-5">
+      <div className="flex flex-col gap-5 mt-5 w-1/2">
         <BaseButton
-            buttonText="Sonucu Göster"
+            buttonText="SONUCU GÖSTER"
             additionalClassName="text-3xl"
             onClick={handleComplete}
             disabled={formik?.values.hairNeed === ''}
         />
         <BaseButton
-            buttonText="Geri"
+            buttonText="GERİ"
             additionalClassName="text-3xl"
             onClick={handleBack}
         />

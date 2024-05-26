@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./fonts/nexa-book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {  
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'CustomFont', sans-serif;
 }
 
 *{
