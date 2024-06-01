@@ -1,37 +1,20 @@
 import { useHairContext } from "../../context/hair-provider";
+import BaseButton from "../ui/base-button";
 
 const Hero = () => {
   //@ts-ignore
   const { handleNext } = useHairContext();
   return (
     <>
-      <h1 className="text-white text-5xl">HAIRTOPIA.2' YE HOŞ GELDİNİZ!</h1>
-      <p className="text-white text-lg">
+      <p className="text-white text-3xl">
         SAÇ İHTİYACINA GÖRE PROFESYONEL BAKIM RUTİNİ OLUŞTURUN
       </p>
-      <button
-        onClick={() => handleNext()}
-        className={`
-          text-white
-          shadow-lg
-          shadow-[#FFE6E6]
-          py-3
-          px-6
-          bg-gradient-to-r
-          from-[#BD1616]
-          to-black
-          animate-pulse
-          rounded-xl
-          hover:border-[#FFE6E6]
-          hover:border-2
-          hover:transition-colors
-          hover:bg-transparent
-          text-2xl
-        `}
-      >
-        TEŞHİSE BAŞLAMAK İÇİN DOKUNUN
-      </button>
-      <p className="text-white text-lg">
+      <BaseButton
+        buttonText="TEŞHİSE BAŞLAMAK İÇİN DOKUNUN"
+        onClick={handleNext}
+        additionalClassName="font-extrabold px-16 text-2xl"     
+      />      
+      <p className="text-white text-lg mt-2">
         SORULARI YANITLAYARAK FARKLI SAÇ TİPLERİ VE İHTİYAÇLARINA UYGUN SERİE EXPERT ÜRÜNLERİNİ KEŞFEDİN
       </p>
 

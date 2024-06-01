@@ -5,7 +5,7 @@ const ResultComponent = () => {
     const { result, handleReset } = useHairContext()
     return(
         <>
-            <h1 className="text-8xl text-white ">ÖNERİLEN ÜRÜN: {result?.title}</h1>
+            <h1 className="text-5xl text-white ">ÖNERİLEN ÜRÜN: {result?.title}</h1>
             <div className="flex h-[60%] mt-4">
                 <img
                     src={result?.imgUrl}

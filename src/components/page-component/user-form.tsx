@@ -8,7 +8,7 @@ const UserForm = () => {
   
   return (
     <>
-      <h1 className="text-white text-6xl">
+      <h1 className="text-white text-5xl">
         HOŞ GELDİNİZ! HAİRTOPİA.2'YE ADIM ATIN
       </h1>
       <h1 className="text-white text-4xl mt-10">
