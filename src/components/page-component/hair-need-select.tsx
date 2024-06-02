@@ -35,7 +35,7 @@ const HairNeedSelect = () => {
       <div className="flex flex-col gap-5 mt-5 w-1/2">
         <BaseButton
             buttonText="SONUCU GÖSTER"
-            additionalClassName="text-3xl"
+            additionalClassName="text-2xl"
             onClick={handleComplete}
             disabled={formik?.values.hairNeed === ''}
         />

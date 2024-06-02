@@ -6,7 +6,7 @@ const ResultComponent = () => {
     return(
         <>
             <h1 className="text-5xl text-white ">ÖNERİLEN ÜRÜN: {result?.title}</h1>
-            <div className="flex h-[60%] mt-4">
+            <div className="flex h-[45%] mt-4">
                 <img
                     src={result?.imgUrl}
                     alt={result?.title}

@@ -8,10 +8,10 @@ const UserForm = () => {
   
   return (
     <>
-      <h1 className="text-white text-5xl">
+      <h1 className="text-white text-2xl">
         HOŞ GELDİNİZ! HAİRTOPİA.2'YE ADIM ATIN
       </h1>
-      <h1 className="text-white text-4xl mt-10">
+      <h1 className="text-white text-2xl mt-10">
         DEVAM ETMEDEN ÖNCE,DİLERSENİZ ADINIZI,SOYADINIZI VE YAŞINIZI GİREBİLİRSİNİZ
       </h1>
       <div className="w-full flex justify-center flex-col items-center gap-8 mt-14">

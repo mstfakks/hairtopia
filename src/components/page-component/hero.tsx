@@ -5,7 +5,7 @@ const Hero = () => {
   //@ts-ignore
   const { handleNext } = useHairContext();
   return (
-    <>
+    <div className="flex flex-col gap-5 justify-center items-center mt-14">
       <p className="text-white text-3xl">
         SAÇ İHTİYACINA GÖRE PROFESYONEL BAKIM RUTİNİ OLUŞTURUN
       </p>
@@ -18,7 +18,7 @@ const Hero = () => {
         SORULARI YANITLAYARAK FARKLI SAÇ TİPLERİ VE İHTİYAÇLARINA UYGUN SERİE EXPERT ÜRÜNLERİNİ KEŞFEDİN
       </p>
 
-      <div className="flex h-[82%]">
+      <div className="flex h-[82%] mb-28">
         <img
           loading="lazy"
           src="./assets/images/hero.png"
@@ -26,7 +26,7 @@ const Hero = () => {
           className="object-contain w-full h-full"
         />
       </div>
-    </>
+    </div>
   );
 };
 

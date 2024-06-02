@@ -22,7 +22,7 @@ const BaseSelect = ({ explainText, items, formik }: BaseSelectProps) => {
   
   return (
     <>
-      <h1 className="text-white text-5xl">{explainText}</h1>
+      <h1 className="text-white text-3xl">{explainText}</h1>
       <div className="flex flex-col w-full items-center justify-center gap-3 mt-5">
         {items?.map((item) => (
           <div
